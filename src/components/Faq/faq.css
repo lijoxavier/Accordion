@@ -84,8 +84,9 @@ body {
 #arrow {
     width: 32px;
     height: 32px;
-    background: url('../../assets/image/image-2.png') #c7bcbc;
-    border-radius: 50%;
+    background: url('../../assets/image/image-2.png') ;
+    /* background: url('../../assets/image/image-2.png') #c7bcbc; */
+    /* border-radius: 50%; */
     cursor: pointer;
     position: absolute;
     top: 20px;
