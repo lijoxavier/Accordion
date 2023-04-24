@@ -1,0 +1,18 @@
+.userlist .even-column{
+    border: 1px solid green;
+        display: flex;
+        align-items: center;
+        /* justify-content: center;
+        gap: 57px; */
+        text-align: center;
+    }
+.userlist .even-column >div{
+    flex: 1;
+}
+.userlist .container{
+    width: 1440px;
+        margin: auto;
+}
+.userlist .even-column h3{
+    text-align: center;
+}
