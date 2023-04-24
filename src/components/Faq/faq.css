@@ -109,7 +109,8 @@ body {
 }
 
 #arrow.arrow-down{
-    background: url("../../assets/image/image-3.png") #c7bcbc;
+    background: url("../../assets/image/image-3.png") ;
+    /* background: url("../../assets/image/image-3.png") #c7bcbc; */
     background-position: center;
     background-repeat: no-repeat;
 }
