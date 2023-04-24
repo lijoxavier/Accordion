@@ -94,12 +94,12 @@ body {
 
 
 }
-.accordion span:hover{
+/* .accordion span:hover{
     background-color: #eee7e7;
 }
 .accordion li:hover{
     background-color: #eee7e7;
-}
+} */
 
 .accordion li p{
     display: none;
