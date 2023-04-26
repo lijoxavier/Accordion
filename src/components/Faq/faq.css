@@ -97,7 +97,7 @@ body {
 /* .accordion span:hover{
     background-color: #eee7e7;
 }
-.accordion li:hover{
+.accordion li:hover{n
     background-color: #eee7e7;
 } */
 
@@ -106,6 +106,9 @@ body {
 }
 .accordion li .show{
     display: block;
+}
+.hide{
+    display: none;
 }
 
 #arrow.arrow-down{

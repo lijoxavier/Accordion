@@ -4,12 +4,20 @@ import bannerImage from '../../assets/image/image-1.png'
 import arrowImage from '../../assets/image/image-2.png'
 
 const Faq = ({userList}) => {
-  const [prevSelectedUserId,setPrevSelectedUserId]=useState('')
+  const [prevSelectedUserId,setPrevSelectedUserId]=useState("")
   const handleAccordion=(e,selecteduserId)=>{
-   prevSelectedUserId!==selecteduserId?setPrevSelectedUserId(selecteduserId):null
-   console.log(e);
+  //  prevSelectedUserId!==selecteduserId?setPrevSelectedUserId(selecteduserId):null
+
+  setPrevSelectedUserId(prevSelectedUserId === selecteduserId ? "" : selecteduserId)
+
+  // if(prevSelectedUserId!==selecteduserId)
+  // setPrevSelectedUserId(selecteduserId)
+  // else
+  // setPrevSelectedUserId("")
+
+  //  console.log(e);
   }
-  console.log(prevSelectedUserId);
+  // console.log(prevSelectedUserId);
   return (
     <Fragment>
       <section className='Faq'>
@@ -32,7 +40,7 @@ const Faq = ({userList}) => {
                   <h3>{user?.name}</h3>
                    <span id='arrow' className={`arrow-${prevSelectedUserId === user?.id && "down "} `}>
                   </span>
-                  <p className={(prevSelectedUserId===user?.id)?"show":null}>company bs:{user?.company.bs} company catchPhrase:{user?.company?.catchPhrase} phone:{user?.phone} email: {user?.email} website: {user?.website}</p>
+                  <p className={(prevSelectedUserId===user?.id)?"show":"hide"}>company bs:{user?.company.bs} company catchPhrase:{user?.company?.catchPhrase} phone:{user?.phone} email: {user?.email} website: {user?.website}</p>
                   {/* <p className={`${prevSelectedUserId === user?.id && "show"} `}>company bs:{user?.company.bs} company catchPhrase:{user?.company?.catchPhrase} phone:{user?.phone} email: {user?.email} website: {user?.website}</p> */}
                 </li>
                 )
