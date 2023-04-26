@@ -1,2 +1,2 @@
-# Task-4
-### it contains userlist,accordion components
+
+### it contains userlist fetched from api and a accordion
